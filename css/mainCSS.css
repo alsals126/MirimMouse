@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+    font-family: 'Cafe24SsurroundAir';
+    font-style: normal;
+    font-weight: normal;
+    width: 1900px;
+    height: 100%;
+    overflow: hidden;
+}
+.school{ 
+    position: absolute;
+    left: 150px;
+    top: 130px;
+    opacity: 0.7;
+}
+.mm{
+    position: absolute;
+    left: 780px;
+    top: 50px;
+    width: 340px;
+}
+#pos1{
+    position: relative;
+    top: 500px;
+    width: auto;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#pos2{
+    position: absolute;
+    top: 640px;
+    left: 350px;
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgb(255, 224, 111);
+}
+#pos3{
+    cursor: pointer;
+    position: absolute;
+    top: 640px;
+    left: 1180px;
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgba(125, 171, 208, 1);
+}
+.productFONT3{
+    width: 150px;
+    margin: 45px 135px;
+    font-family: 'Jua', sans-serif;
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+}
+@keyframes anim{
+    0% {top: 510px;}
+    30% {top: 460px;}
+    60% {top: 510px;}
+    100% {top: 510px;}
+}

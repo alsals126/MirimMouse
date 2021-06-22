@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{margin: 0;}
+body{
+    background-image: url('../img/CardGame/cardgameBG.png');
+    background-size: 1930px 950px;
+}
+
+.setting{
+    position: absolute;
+    top: 25px;
+    left: 1750px;                
+    width: 170px;
+}
+.setting img{
+    cursor: pointer;
+    width: 50px;
+    margin-right: 25px;
+}
+
+#ViewCount{
+    position: absolute;
+    left: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+}
+
+.MM1, .MM2{
+    overflow: hidden;
+    position: absolute;
+}
+.MM1 {
+    top: 787px; 
+    left: 625px;   
+    height: 150px;
+}
+.MM2 {
+    top: 550px; 
+    left: 1700px;   
+    height: 170px;
+}
+.MM1img, .MM2img{
+    position: relative;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;    
+}
+.MM1img{ 
+    top: 20px;
+    width: 140px; 
+    animation-name: anim1;    
+}
+.MM2img{ 
+    top: 25px;
+    width: 170px; 
+    animation-name: anim2;            
+}
+
+#wrapper{
+    position: absolute;
+    left: 250px;
+    top: 115px;
+    width: 1440px;
+}
+.card{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 210px;
+    perspective: 140px;
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card.flipped .card-inner{ transform: rotateY(180deg); }
+.card-front{ background-image: url('../img/CardGame/cardFRONT.png'); }
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card-back{
+    background-image: url('../img/CardGame/cardBACK.png');
+    transform: rotateY(180deg);
+    font-family: 'Noto Serif KR', serif;    
+    font-size: 90px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 190px;
+}
+
+.modal, .lastSEC {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal button {
+    cursor: pointer;
+    position: absolute;
+    left: 1230px;
+    top: 50px;
+    background: transparent;
+    border: 0;
+    
+    font-size: 80px;
+    text-shadow: 2px 3px 2px gray;
+    color: #ffffff;
+    z-index: 100;
+}
+.modalBox {
+    position: relative;
+    left: 610px;
+    top: 50px;
+    width: 700px; 
+    height: 800px;
+    border-radius: 30px;
+    background-image: url('../img/CardGame/howtoBG.png');
+    background-size: 100% 100%;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Jua', sans-serif;
+}
+.modalBox>span{
+    position: relative;
+    top: 100px;
+}
+.modalBox img{ width: 200px; }
+.pos{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    font-size: 60px;
+}
+
+.last{
+    position: absolute;
+    top: 160px;
+    left: 585px;
+    width: 750px;
+    height: 530px;
+    background-image: url('../img/CardGame/lastBG.png');
+    background-size: 100% 100%;
+    font-family: 'Jua', sans-serif;
+}
+.last img{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.last span{
+    position: absolute;
+    left: 395px;
+    top: 80px;
+    font-size: 50px;
+}
+.last a{
+    position: absolute;
+    left: 450px;
+    top: 410px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes anim1{
+    0%, 40%, 100% {top: 220px;}
+    10%, 20% {top: 68px;}
+    60%, 90% {top: 40px} 
+}
+@keyframes anim2{
+    0%, 100% {top: 220px;}
+    30%, 80% {top: 0px}  
+}

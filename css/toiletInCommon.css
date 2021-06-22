@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+    background-size: 1930px 950px;
+}
+
+.arrow img{
+    cursor: pointer;
+    position: absolute; 
+    top: 430px; 
+    width: 100px;
+}
+
+.mission{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 70px;
+    animation-name: highlights;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modalBox {
+    position: relative;
+    left: 535px;
+    top: 130px;
+    width: 850px; 
+    height: 595px;
+    border-radius: 30px;
+    background-image: url('../img/toilet/화장실howto.png');
+    background-size: 100% 100%;
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+}
+.modalBox div{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+}
+.modalBox .s1{
+    font-size: 90px;
+    color: rgb(16, 38, 56);
+}
+
+@keyframes highlights{
+    30%, 50%, 80% {width: 73px;}
+}
