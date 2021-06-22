@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@font-face{
+	src: url("../font/Jua/Jua-Regular.ttf");
+    font-family: "Jua"; 
+}
 body{
     background-size: 1930px 950px;
 }

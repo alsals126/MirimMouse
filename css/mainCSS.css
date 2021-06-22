@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@font-face{
+	src: url("../font/Black_Han_Sans/BlackHanSans-Regular.ttf");
+    font-family: "Black Han Sans"; 
+}
+@font-face{
+	src: url("../font/Jua/Jua-Regular.ttf");
+    font-family: "Jua"; 
+}
 body{
     font-family: 'Cafe24SsurroundAir';
     font-style: normal;
