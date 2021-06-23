@@ -37,3 +37,10 @@ $(function(){
         }
     });
 });
+
+function home(){
+    if(confirm('게임이 저장되지 않고 교무실로 돌아갑니다.\n그래도 계속하시겠습니까?') == true)
+        location.replace('class1.html')
+    else
+        return;
+}

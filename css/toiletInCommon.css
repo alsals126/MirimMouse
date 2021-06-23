@@ -3,7 +3,7 @@
     font-family: "Jua"; 
 }
 body{
-    background-size: 1930px 950px;
+    background-size: 1930px 1000px;
 }
 
 .arrow img{
@@ -13,6 +13,13 @@ body{
     width: 100px;
 }
 
+.home{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 50px;
+}
 .mission{
     cursor: pointer;
     position: absolute;
@@ -24,7 +31,7 @@ body{
     animation-iteration-count: infinite; 
 }
 
-.modal {
+.modal, .key {
     position: fixed;
     top: 0;
     left: 0;
@@ -54,6 +61,12 @@ body{
 .modalBox .s1{
     font-size: 90px;
     color: rgb(16, 38, 56);
+}
+.modalBox img{
+    position: absolute;
+    top: 113px;
+    right: -75px;
+    width: 65px;
 }
 
 @keyframes highlights{

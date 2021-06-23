@@ -2,13 +2,73 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>🐭MM🐭</title>
+        <title>MM</title>
         <style>
-            body{ background-image: url('../img/toilet/화장실청소도구함.png'); }
+            @font-face{
+                src: url("../font/Roboto_Mono/static/RobotoMono-SemiBold.ttf");
+                font-family: "Courier Prime"; 
+            }
+            body{ background-image: url('../img/toilet/청소도구함.png'); }
+            .lock{
+                cursor: pointer;
+                position: absolute;
+                left: 568px;
+                top: 486px;
+                width: 53px;
+                height: 48px;
+            }
+            .keyBox{
+                position: relative;
+                left: 570px;
+                top: 130px;
+                width: 850px; 
+                height: 295px;
+            }
+            .keyBox img{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+            }
+            .keyBox input{
+                position: absolute;
+                top: 110px;
+                left: 45px;
+                width: 850px;
+                font-family: 'Courier Prime', monospace;
+                letter-spacing: 80px;
+                font-size: 210px;
+                background-color: rgba(0, 0, 0, 0);   
+                outline: none;
+                border: none;
+            }
         </style>
         <link rel="stylesheet" href="../css/toiletInCommon.css">
 
-        <script type="text/javascript" src="../js/toiletInCommon.js"></script> 
+        <script type="text/javascript" src="../js/toiletInCommon.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            function limit(e){
+                e.value = e.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+
+                if(e.value.length > 4){
+                    var val = e.value;
+                    e.value = e.value.slice(0, 4);
+                }
+                if(e.value.length == 4) 
+                    setTimeout(() => {end(e.value)}, 300)   
+            }
+            function end(val){
+                if(val == 5663){
+                    alert('손소독제를 얻었습니다!')
+                    $('.key').hide();
+                }
+                else{
+                    alert('틀렸습니다.')
+                }
+            }
+        </script>
     </head> 
     <body>
         <div class="arrow">
@@ -16,15 +76,25 @@
             <img src="../img/right-arrow.png" style="left: 50px; transform: rotate(180deg);" onclick="location.href='toilet1.html'">
         </div> 
         
-        <img src="../img/memo.png" class="mission">
+        <div class="lock"></div>
+        <!-- 청소도구함 모달 -->
+        <div class="key">
+            <div class="keyBox">
+                <img src="../그외/4x/keypad.png">
+                <input type="text" oninput="limit(this)" class="keypad">
+            </div>
+        </div>
 
+        <img src="../img/homeFull.png" class="home" onclick="home()">
+        <img src="../img/memo.png" class="mission">
         <!-- 미션 모달 -->
         <div class="modal">
             <div class="modalBox">
                 <div>
                     <span class="s1">손소독제</span>를 찾고
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="s2"><span style="color: rgb(239, 242, 255)">화장실</span>을 탈출해줘🐭</span>
+                    <span class="s2"><span style="color: rgb(239, 242, 255)">화장실</span>을 탈출해줘</span>
+                    <img src="../img/toilet/mouse.png">
                 </div>
             </div>
         </div>

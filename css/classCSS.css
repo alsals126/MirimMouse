@@ -1,0 +1,47 @@
+body{
+    background-color:ivory;
+}
+
+#showCharacter{
+    position:relative;
+    width:300px;
+    height:400px;
+    margin-top: 10%;
+    left:13%;
+    z-index: -1;
+}
+
+#nameBox{
+    position:relative;
+    border-radius: 30px;
+    width:300px;
+    height:70px;
+    left:13%;
+    margin-top:-4%;
+    background-color:#428FC8;
+}
+
+#name{
+    border:1px solid black;
+    font-size:32px;
+    left:13%;
+    margin-top:-4%;
+    z-index: 1;
+}
+
+#TextBox{
+    border:1px solid black;
+    width:80%;
+    height:300px;
+    margin-left: 10%;
+    margin-top:-20px;
+    z-index: -1;
+}
+
+#text{
+    border:1px solid black;
+    width:75%;
+    height:300px;
+       font-size: 28px;
+    margin-left:13%;
+}

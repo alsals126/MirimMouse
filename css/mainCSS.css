@@ -42,6 +42,7 @@ body{
     animation-iteration-count: infinite;
 }
 #pos2{
+    cursor: pointer;
     position: absolute;
     top: 640px;
     left: 350px;

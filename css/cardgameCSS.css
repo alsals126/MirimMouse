@@ -10,7 +10,7 @@
 *{margin: 0;}
 body{
     background-image: url('../img/CardGame/cardgameBG.png');
-    background-size: 1930px 950px;
+    background-size: 1920px 1130px;
 }
 
 .setting{
@@ -37,13 +37,13 @@ body{
     position: absolute;
 }
 .MM1 {
-    top: 787px; 
-    left: 625px;   
+    top: 819px; 
+    left: 175px;   
     height: 150px;
 }
 .MM2 {
-    top: 550px; 
-    left: 1700px;   
+    top: 690px; 
+    left: 1690px;   
     height: 170px;
 }
 .MM1img, .MM2img{
@@ -139,8 +139,19 @@ body{
     font-family: 'Jua', sans-serif;
 }
 .modalBox>span{
-    position: relative;
+    position: absolute;
+    left: 98px;
     top: 100px;
+}
+.msLeaf{
+    position: absolute;
+    top: 95px;
+    left: 172px;
+}
+.msOX{
+    position: absolute;
+    top: 372px;
+    left: 435px;
 }
 .modalBox img{ width: 200px; }
 .pos{
