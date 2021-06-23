@@ -68,7 +68,7 @@ body{
 
   .modalBox {
     position: absolute;
-    background-image: url('./img/대지\ 1.png');
+    background-image: url('../img/PingPongGame/대지\ 1.png');
     background-size: 100% 100%;
 
     border-radius: 30px;
