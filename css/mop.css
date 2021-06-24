@@ -1,0 +1,132 @@
+@font-face{
+	src: url("../font/Jua/Jua-Regular.ttf");
+    font-family: "Jua"; 
+}
+body{
+    background-size: 1930px 1000px;
+}
+
+.arrow img{
+    cursor: pointer;
+    position: absolute; 
+    top: 430px; 
+    width: 100px;
+}
+
+.home{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 50px;
+}
+
+.mission{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 70px;
+    animation-name: highlights;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+
+
+
+@keyframes highlights{
+    30%, 50%, 80% {width: 73px;}
+}
+
+.hint {
+    cursor: zoom-in;
+    position: fixed;
+    top: 350px;
+    left: 830px;
+    width: 850px; 
+    height: 595px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hint div{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+}
+.hint .s1{
+    font-size: 90px;
+    color: rgb(16, 38, 56);
+}
+.hint img{
+    position: absolute;
+    top: 113px;
+    right: -75px;
+    width: 65px;
+}
+
+.modal, .hintmodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalBox {
+    position: relative;
+    left: 535px;
+    top: 130px;
+    width: 850px; 
+    height: 595px;
+    border-radius: 30px;
+    background-image: url('../img/toilet/화장실howto.png');
+    background-size: 100% 100%;
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+}
+.modalBox div{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+}
+.modalBox .s1{
+    font-size: 90px;
+    color: rgb(16, 38, 56);
+}
+.modalBox img{
+    position: absolute;
+    top: 113px;
+    right: -75px;
+    width: 65px;
+}
+
+.hintmodalBox {
+    position: relative;
+    left: 535px;
+    top: 130px;
+    width: 850px; 
+    height: 595px;
+    border-radius: 30px;
+    background-image: url('../img/toilet/대걸레-힌트.gif');
+    background-size: 100% 100%;
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+}
+.hintmodalBox div{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+}
+.hintmodalBox .s1{
+    font-size: 90px;
+    color: rgb(16, 38, 56);
+}
+.hintmodalBox img{
+    position: absolute;
+    top: 113px;
+    right: -75px;
+    width: 65px;
+}

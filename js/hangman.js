@@ -62,6 +62,15 @@ function render() {
     if (guess === secretWord) {
         $(".lastSEC").show();
         $message.html("축하합니다!!암호를 찾으셨어요^^");
+        setTimeout(()=>{
+            if(localStorage.getItem("toiletKeypad") == "success"){
+                alert("화장실을 탈출했습니다!")
+                location.href = "main.html"
+            }else{
+                alert("손소독제를 찾고 탈출시도해주세요.")
+                location.href = "toilet1.html"
+            }
+        }, 300)
         $message.fadeIn();
     } else if (wrongCount === 6) {
         $message.html("암호를 찾지 못하였네요..다시 하시겠어요?");
@@ -76,7 +85,6 @@ function handleLetterClick(evt) {
     if (wrongCount === 6) return;
 
     var letter = evt.target.textContent;
-    console.log(secretWord);
     if (secretWord.includes(letter)) {
         var pos = secretWord.indexOf(letter);
         while (pos >= 0) {

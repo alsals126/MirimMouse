@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <title>🐭MM🐭</title>
         <style>
-            body{ background-image: url('../img/toilet/화장실문.png'); }
+            body{ background-image: url('../img/toilet/대걸레실.gif'); }
         </style>
-        <link rel="stylesheet" href="../css/toiletInCommon.css">
+        <link rel="stylesheet" href="../css/mop.css">
 
         <script type="text/javascript" src="../js/toiletInCommon.js"></script> 
         <script type="text/javascript" src="../js/onloadToilet.js"></script> 
+        <script type="text/javascript" src="../js/mop.js"></script> 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -24,8 +25,8 @@
     </head> 
     <body>
         <div class="arrow">
-            <img src="../img/right-arrow.png" style="right: 50px;" onclick="location.href='toilet2.html'">
-            <img src="../img/right-arrow.png" style="left: 50px; transform: rotate(180deg);" onclick="location.href='ball.html'">
+            <img src="../img/right-arrow.png" style="right: 50px;" onclick="location.href='toilet1.html'">
+            
         </div> 
         
         <img src="../img/homeFull.png" class="home" onclick="home()">
@@ -42,5 +43,19 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="model">
+            <button style="width: 160pt; height: 60pt; border: 0cm;" class="hint"></button>
+        </div>  
+
+
+        <div class="hintmodal">
+            <div class="hintmodalBox">
+                <div>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
