@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/pingpongCSS.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping pong game</title>
+</head>
+<body>
+    <div class="header">
+        <div id="setting">
+            <button type="button" class="openBtn" style="CURSOR:pointer;">
+                <img src="../img/PingPongGame/question-sign.png">
+            </button>
+
+            <div class="modal hidden">
+                <div class="bg"></div>
+                <div class="modalBox">
+                  <h2 style="text-align: center;">게임방법</h2>
+                  <p>3분안에 2점을 획득하세요!</p>
+                  <p>속도가 점점 빨라져요!</p>
+                  <p>왼쪽 : 미쥐패들 / 오른쪽 : 컴퓨터 </p>
+                  <h3>조작법</h3>
+                  <p>마우스를 움직이면 됩니다!</p>
+                  <button class="closeBtn" style="cursor: pointer;">❌</button>
+                </div>
+            </div>
+
+            <button class="nextBtn" type="button" onclick="onloadCard()"><img src="../img/PingPongGame/homeFull.png"></button>
+            <script src="../js/onloadCard.js"></script>
+        </div>
+
+        <script>
+            var time=61;
+            var min="";
+            var sec="";
+
+            var x=setInterval(function(){
+                min=parseInt(time/60);
+                sec=time%60;
+                if(min===0){
+                    document.getElementById("demo").innerHTML = sec+"초";
+                }else{
+                    document.getElementById("demo").innerHTML = min+"분 "+sec+"초";
+                }
+                time--;
+
+                if(time<0){
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML="시간 초과";
+                    clearInterval(pingpongInterval);
+                }
+            },1000);
+
+        </script>
+
+        <div id="demo"></div>
+    </div>
+    <canvas id="pong" width="800" height="600"></canvas>
+    <script src="../js/pong.js"></script>
+    <div id="stop_message_win">
+        <!--ping pong게임 5점따면 게임 종료창 만들기-->
+    </div>
+</body>
+</html>

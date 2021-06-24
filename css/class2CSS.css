@@ -19,15 +19,14 @@ body{
     height: 100%;
     background-image: url('../img/교무실.PNG');
     background-size: 1920px 1130px;
-}
-
+}   
 
 #showCharacter{
     position:relative;
     width:300px;
     height:400px;
     margin-top: 10%;
-    left:13%;
+    left:40%;
     z-index: -1;
 }
 
@@ -36,7 +35,7 @@ body{
     border-radius: 30px;
     width:300px;
     height:70px;
-    left:13%;
+    left:40%;
     margin-top:-4%;
     background-color:#428FC8;
     text-align: center;

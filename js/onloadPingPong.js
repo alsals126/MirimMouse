@@ -1,3 +1,3 @@
 function onloadPingPong(){
-    location.href="class1.html";
+    location.href="pingpongGame.html";
 }

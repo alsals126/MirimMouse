@@ -25,6 +25,10 @@ body{
     margin-right: 25px;
 }
 
+.nextBtn{
+    cursor:pointer;
+}
+
 #ViewCount{
     position: absolute;
     left: 30px;
@@ -189,6 +193,7 @@ body{
     font-size: 30px;
     color: rgba(0, 0, 0, 0.8);
 }
+
 
 @keyframes anim1{
     0%, 40%, 100% {top: 220px;}
