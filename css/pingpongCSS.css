@@ -97,6 +97,7 @@ body{
 
   .nextBtn{
     cursor:pointer;
+    margin-left:25%;
   }
 
   #demo{
